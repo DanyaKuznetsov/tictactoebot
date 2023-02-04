@@ -1,0 +1,47 @@
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+    background-image: url(../img/1533326959_low-poly-background-generator-min.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    --mainColor: #fff;
+    color: var(--mainColor);
+    font-family: 'Jura', sans-serif;
+}
+.board{
+    width: 90vw;
+    height: 90vw;
+    max-width: 600px;
+    max-height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+h1{
+    font-size: 6vh;
+    text-align: center;
+}
+p{
+    font-size: 3vh;
+}
+span{
+    font-weight: 900;
+    font-size: xx-large;
+    color: brown;
+}
+.cell{
+    display: flex;
+    border: 1px solid;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    transition: all 0.5s;
+}
+.error{
+    background: red;
+}
